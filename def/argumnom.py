@@ -5,8 +5,9 @@ argumento não nomeado recebe apenas o argumento valor
 '''
 
 def soma(x,y):
-    print(x+y)
+    print(x + y)
 
 
 
-soma(1,2)
+soma(1, 2)
+

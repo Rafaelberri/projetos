@@ -3,7 +3,7 @@ def calcular_primeiro_digito(cpf):
     cpf_numeros = [int(digito) for digito in cpf if digito.isdigit()]
 
     # Calcular a soma dos produtos
-    soma = sum(cpf_numeros[i] * (10 - i) for i in range(10))
+    soma = sum(cpf_numeros[i] * (10 - i) for i in range(9))
 
     # Calcular o resultado final
     resultado = soma * 10 % 11
