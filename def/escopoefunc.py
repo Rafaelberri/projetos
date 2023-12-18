@@ -7,17 +7,22 @@ O escopo local é o escopo onde apenas nomes do mesmo local
 podem ser alcançados
 
 '''
-x = 5
-
+x = 9
+y = 3
 def escopo():
-    global x 
-    x = 1
+    global x
+    x = 5 
+    y = 7
 
-    def outro_escopo():
-        global x
-        x = 5
-        y = 12
-        print(x,y)
+    print(f' Saida do escopo : {x} {y}')
+    
+    def other_escopo():
+        print("saiu saporra")
 
-    escopo(outro_escopo())
+    other_escopo()
+        
+
+escopo()
+
+print(x,y)
 
